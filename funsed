@@ -1,0 +1,3 @@
+sed -ri '/^.{,7}$/d' words.txt            # remove shorter than 8
+sed -ri '/[!-/:-@\[-`\{-~]+/!d' words.txt # remove no special chars
+sed -ri '/[0-9]+/!d' words.txt            # remove no numbers
